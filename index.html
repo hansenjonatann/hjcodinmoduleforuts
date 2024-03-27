@@ -2232,7 +2232,7 @@
                   </div>
                 </div>
 
-                 <!-- Materi 3 : Inheritence  -->
+                 <!-- Materi 4 : Encapsulation  -->
                 <div class="mt-3">
                   <h5 class="fw-bold">Materi 4 : Encapsulation</h5>
                   <p class="mt-2">Python memiliki 3 access modifier di dalam konsep encapsulation yaitu <span class="fw-bold">private</span> , <span class="fw-bold">protected</span>, dan <span class="fw-bold">public</span></p>
@@ -2284,11 +2284,11 @@
                   
                 </div>
 
-                 <!-- Materi 3 : Inheritence  -->
+                 <!-- Materi 5 : Inheritence  -->
                 <div class="mt-3">
-                  <h5 class="fw-bold">Materi 4 : Inheritence</h5>
+                  <h5 class="fw-bold">Materi 5 : Inheritence</h5>
 
-                  <p class="mt-3"><span class="fw-bold">Inheritance</span> adalah salah satu konsep OOP dimana orang tua ( parent ) mewarikan atribut kepada anaknya (Child ).</p>
+                  <p class="mt-3"><span class="fw-bold">Inheritance</span> adalah salah satu konsep OOP dimana orang tua ( parent ) mewariskan atribut kepada anaknya (Child ).</p>
                  
 
                   <div class="mt-2">
@@ -2297,12 +2297,224 @@
                     <div class="mt-3">
                       <img src="./assets/images/pbo/inheritance.png" alt="" width="300">
                     </div>
+
+                    <div class="mt-3">
+                      <span class="fw-bold">Keterangan: <p>Parent yang ada di dalam kurung adalah warisan Parent untuk class Child</p> </span>
+
+                      <div class="mt-2">
+                        <p class="fw-bold">Contoh Inheritance</p>
+
+                        <div class="mt-2">
+                          <img src="./assets/images/pbo/contoh_inheritance.png" alt="" class="mt-2" width="300">
+
+                          <div class="mt-2">
+                            <p class="fw-bold text-primary">Penjelasan adalah sebagai berikut</p>
+                            <ul>
+                              <li><span class="fw-bold">Line 1 :</span> membuat class dengan nama "Universitas"</li>
+                              <li><span class="fw-bold">Line 2 : </span> menggunakan sebuah <span class="fw-bold">built-in function</span> dengan menerima parameter "name"</li>
+                              <li><span class="fw-bold">Line 3 :</span> menggunakan keyword self diikuti dengan nama variabel yang diinginkan untuk menimpa variabel name yang terdapat di dalam parameter.</li>
+                              <li><span class="fw-bold">Line 6 :</span> membuat sebuah class baru dengan nama "Mahasiswa" yang mewarisi atribut parentnya yaitu <span class="fw-bold">Universitas</span></li>
+                              <li><span class="fw-bold">Line 7 : </span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "printMahasiswa" dan menerima parameter self</li>
+                              <li><span class="fw-bold">Line 8 : </span>menampilkan tulisan "Nama Mahasiswa adalah diikuti dengan atribut name yang terdapat di parent"</li>
+                              <li><span class="fw-bold">Line 11 : </span> membuat <span class="fw-bold">objek</span> baru dengan nama "hansen" , dan diisi dengan class child yaitu <span class="fw-bold">Mahasiswa</span> dengan parameter "Hansen Jonatan".</li>
+                              <li><span class="fw-bold">Line 12 :</span>memanggil method atau function yang telah dibuat di dalam class <span class="fw-bold">Mahasiswa</span> untuk menjalankan program.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     
                   </div>
 
+
+
                   
 
                   
+                </div>
+
+                <!-- Materi 6 : Polymorphism  -->
+                <div class="mt-3">
+                  <h5 class="fw-bold">Materi 6 : Polymorphism</h5>
+
+                  <p class="mt-3"><span class="fw-bold">Polymorphism</span> adalah salah satu konsep OOP dimana metode pada child class dengan menggunakan nama yang sama seperti pada parent class</p>
+
+                  <div class="mt-2">
+                    <p class="fw-bold">Polymorphism terbagi menjadi 3 metode yaitu</p>
+                    <ol>
+                      <li>
+                        <div class="mt-2">
+                          <p>Polymorphism dengan <span class="fw-bold">function</span></p>
+                            <p class="mt-2">Python memungkinkan class yang berbeda dapat memanggil <span class="fw-bold">function</span> dengan nama yang sama.</p>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="mt-2">
+                          <p>Polymorphism dengan <span class="fw-bold">class</span></p>
+                            <p class="mt-2">Python memungkinkan class yang berbeda untuk menggunakan metode dengan nama yang sama  <span class="fw-bold">function</span> dengan nama yang sama.</p>
+                        </div>
+                      </li>
+
+                        <li>
+                        <div class="mt-2">
+                          <p>Polymorphism dengan <span class="fw-bold">inheritance</span></p>
+                            <p class="mt-2">Python memungkinkan melakukan modifikasi metode di dalam child class yang telah diwarisi dari parent class.</p>
+                        </div>
+                      </li>
+
+                    </ol>
+                  </div>
+                 
+                  <!-- Polymorphism Function -->
+                  <div class="mt-2">
+                    <h5 class="fw-bold">Polymorphism Function</h5>
+                    <div class="mt-2">
+                      
+                      <p class="text-danger">Contoh penerapan Polymorphism Function</p>
+
+                      <div class="mt-2">
+                        <img src="./assets/images/pbo/contoh_polymorphism_function.png" alt="" class="mt-2" width="300">
+
+                        <p class="mt-3 fw-bold">Penjelasan</p>
+                        <ol>
+                          <li><span class="fw-bold">Line 1 :</span>membuat sebuah <span class="fw-bold">class</span> dengan nama "ProgrammingLanguage".</li>
+
+                          <li><span class="fw-bold">Line 2 :</span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "type" yang menerima parameter self</li>
+
+                          <li><span class="fw-bold">Line 3 : </span><span class="fw-bold">mencetak</span> tulisan "Type of Programming Language" ke dalam console</li>
+
+                           <li><span class="fw-bold">Line 5 :</span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "variable" yang menerima parameter self</li>
+
+                          <li><span class="fw-bold">Line 6 : </span><span class="fw-bold">mencetak</span> tulisan "Variable of Programming Language" ke dalam console</li>
+
+                          <li><span class="fw-bold">Line 8 :</span>membuat sebuah <span class="fw-bold">class</span>baru dengan nama "Dart".</li>
+
+                           <li><span class="fw-bold">Line 9 :</span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "type" yang menerima parameter self</li>
+
+                          <li><span class="fw-bold">Line 10 : </span><span class="fw-bold">mencetak</span> tulisan "Dart" ke dalam console</li>
+
+                           <li><span class="fw-bold">Line 12 :</span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "variable" yang menerima parameter self</li>
+
+                          <li><span class="fw-bold">Line 13: </span><span class="fw-bold">mencetak</span> tulisan "Variable in Dart are String , Map , List , int , boolean" ke dalam console</li>
+                          
+                        </ol>
+                      </div>
+
+                      
+
+                    </div>
+                  </div>
+                  
+                  <!-- Polymorphism Class -->
+                  <div class="mt-2">
+                    <h5 class="fw-bold">Polymorphism Class</h5>
+                    <div class="mt-2">
+                      
+                      <p class="text-danger">Contoh penerapan Polymorphism Class</p>
+
+                      <div class="mt-2">
+                        <img src="./assets/images/pbo/contoh_polymorphism_class.png" alt="" class="mt-2" width="300">
+
+                        <p class="mt-3 fw-bold">Penjelasan</p>
+                        <ul>
+                          <li><span class="fw-bold">Line 1 : </span>membuat sebuah <span class="fw-bold">class</span> dengan nama "Cat".</li>
+
+                          <li><span class="fw-bold">Line 2 : </span>menggunakan <span class="fw-bold">built-in function</span> yaitu "<span class="fw-bold">__init__</span>" yang menerima parameter self , dan name</li>
+
+                          <li><span class="fw-bold">Line 3 : </span>memanggil parameter self diikuti dengan nama name dan menyimpan nilai dari variabel name</li>
+
+                          <li><span class="fw-bold">Line 5 : </span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "sound" yang menerima parameter "self".</li>
+
+                          <li><span class="fw-bold">Line 6 : </span><span class="fw-bold">mencetak</span> tulisan "Meow" ke dalam console.</li>
+
+                          <li><span class="fw-bold">Line 8 : </span>membuat sebuah <span class="fw-bold">class</span> dengan nama "Dog".</li>
+
+                          <li><span class="fw-bold">Line 9 : </span>menggunakan <span class="fw-bold">built-in function</span> yaitu "<span class="fw-bold">__init__</span>" yang menerima parameter self , dan name</li>
+
+                          <li><span class="fw-bold">Line 10 : </span>memanggil parameter self diikuti dengan nama name dan menyimpan nilai dari variabel name</li>
+
+                          <li><span class="fw-bold">Line 12 : </span>membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "sound" yang menerima parameter "self".</li>
+
+                          <li><span class="fw-bold">Line 13 : </span><span class="fw-bold">mencetak</span> tulisan "GukGuk" ke dalam console.</li>
+
+                          <li><span class="fw-bold">Line 15 : </span>membuat sebuah objek baru dengan nama "cat" diisi dengan nilai class <span class="fw-bold">Cat</span>yang menerima parameter berupa tulisan "Tom".</li>
+
+                          <li><span class="fw-bold">Line 16 : </span>membuat sebuah objek baru dengan nama "dog" diisi dengan nilai class <span class="fw-bold">Cat</span>yang menerima parameter berupa tulisan "Husky".</li>
+
+                          <li><span class="fw-bold">Line 19 : </span>melakukan perulangan dengan keyword <span class="fw-bold">for</span> diikuti dengan variabel baru dengan nama "animal" , kemudian diikuti dengan keyword <span class="fw-bold">in</span> dan menerima parameter dari objek cat , dan dog yang telah dibuat</li>
+
+                          <li><span class="fw-bold">Line 20 : </span>memanggil variabel "animal" kemudian diikuti dengan memanggil function "sound" </li>
+                          
+                          
+                        </ul>
+                      </div>
+
+                      
+
+                    </div>
+                  </div>
+
+                   <!-- Polymorphism Inheritance -->
+                  <div class="mt-2">
+                    <h5 class="fw-bold">Polymorphism Inheritance</h5>
+                    <div class="mt-2">
+                      
+                      <p class="text-danger">Contoh penerapan Polymorphism Inheritance</p>
+
+                      <div class="mt-2">
+                        <img src="./assets/images/pbo/contoh_polymorphism_inheritance.png" alt="" class="mt-2" width="300">
+
+                        <p class="mt-3 fw-bold">Penjelasan</p>
+                        <ul>
+                          <li><span class="fw-bold">Line 1 : </span>membuat sebuah <span class="fw-bold">class</span> dengan nama "Fruit".</li>
+
+                          <li><span class="fw-bold">Line 2 : </span> membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "intro", yang menerima parameter "self"</li>
+
+                          <li><span class="fw-bold">Line 3 : </span> mencetak tulisan "In this world there are several types of fruits of taste". </li>
+
+                          <li><span class="fw-bold">Line 5 : </span> membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "taste", yang menerima parameter "self"</li>
+
+                          <li><span class="fw-bold">Line 6 : </span> mencetak tulisan "Almost all fruits have taste". </li>
+
+                          <li><span class="fw-bold">Line 8 : </span>membuat sebuah class baru dengan nama "Apple" yang mewarisi class parent yaitu "Fruit".</li>
+
+                          <li><span class="fw-bold">Line 9 : </span> membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "taste", yang menerima parameter "self"</li>
+
+                          <li><span class="fw-bold">Line 10 : </span> mencetak tulisan "Apples have a sweet taste". </li>
+
+                          <li><span class="fw-bold">Line 12 : </span>membuat sebuah class baru dengan nama "Orange" yang mewarisi class parent yaitu "Fruit".</li>
+
+                          <li><span class="fw-bold">Line 13 : </span> membuat sebuah <span class="fw-bold">user-defined function</span> dengan nama "taste", yang menerima parameter "self"</li>
+
+                          <li><span class="fw-bold">Line 14 : </span> mencetak tulisan "Oranges have a sweet taste and sour taste". </li>
+
+                          <li><span class="fw-bold">Line 16 : </span> membuat sebuah objek baru dengan nama "fruit" dan diisi dengan nilai class "Fruit". </li>
+
+                          <li><span class="fw-bold">Line 17 : </span> membuat sebuah objek baru dengan nama "apple" dan diisi dengan nilai class "Apple". </li>
+                        
+                          <li><span class="fw-bold">Line 18 : </span> membuat sebuah objek baru dengan nama "orange" dan diisi dengan nilai class "Orange". </li>
+
+                          <li><span class="fw-bold">Line 20 : </span> memanggil object "fruit" kemudian memanggil function / method "intro".</li>
+
+                          <li><span class="fw-bold">Line 21 : </span> memanggil object "fruit" kemudian memanggil function / method "taste".</li>
+
+                          <li><span class="fw-bold">Line 22 : </span> memanggil object "apple" kemudian memanggil function / method "intro".</li>
+
+                          <li><span class="fw-bold">Line 23 : </span> memanggil object "apple" kemudian memanggil function / method "taste".</li>
+
+                           <li><span class="fw-bold">Line 24 : </span> memanggil object "orange" kemudian memanggil function / method "intro".</li>
+
+                          <li><span class="fw-bold">Line 25 : </span> memanggil object "orange" kemudian memanggil function / method "taste".</li>
+                          
+                        </ul>
+                      </div>
+
+                      
+
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
